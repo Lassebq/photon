@@ -322,6 +322,8 @@ option.CLOUDS_NOCTILUCENT              = Серебристые облака
 
 option.BLOCKY_CLOUDS                   = Квадратные облака
 option.BLOCKY_CLOUDS.comment           = Объемные облака в ванильном стиле. Включение этой опции отключает все другие типы облаков
+option.BLOCKY_CLOUDS_PRIMARY_STEPS     = Основные шаги
+option.BLOCKY_CLOUDS_LIGHTING_STEPS    = Шагов освещения
 option.BLOCKY_CLOUDS_LAYER_2           = Второй слой
 option.BLOCKY_CLOUDS_LAYER_2.comment   = Второй слой объемных квадратных облаков! Помните, что включение этой опции удваивает влияние облаков на производительность
 option.BLOCKY_CLOUDS_THICKNESS         = Толщина

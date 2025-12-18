@@ -168,8 +168,8 @@ vec4 raymarch_blocky_clouds(
     float layer_altitude,
     float dither
 ) {
-    const uint primary_steps = 12;
-    const uint lighting_steps = 4;
+    const uint primary_steps = BLOCKY_CLOUDS_PRIMARY_STEPS;
+    const uint lighting_steps = BLOCKY_CLOUDS_LIGHTING_STEPS;
     const float max_ray_length = 512;
     const float min_transmittance = 0.075;
 
