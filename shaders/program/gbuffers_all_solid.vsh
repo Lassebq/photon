@@ -19,6 +19,8 @@ out vec4 tint;
 flat out uint material_mask;
 flat out mat3 tbn;
 
+out float chunk_fade;
+
 #if defined POM
 out vec2 atlas_tile_coord;
 out vec3 tangent_pos;
@@ -167,4 +169,7 @@ void main() {
 #endif
 
     gl_Position = clip_pos;
+#if defined(IRIS_FEATURE_FADE_VARIABLE)
+    chunk_fade = mc_chunkFade;
+#endif
 }

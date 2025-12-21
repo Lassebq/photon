@@ -36,6 +36,8 @@ in vec4 tint;
 flat in uint material_mask;
 flat in mat3 tbn;
 
+in float chunk_fade;
+
 #if defined POM
 in vec2 atlas_tile_coord;
 in vec3 tangent_pos;
@@ -323,6 +325,11 @@ void main() {
 #ifdef WHITE_WORLD
     base_color.rgb = vec3(1.0);
 #endif
+
+    if(chunk_fade != -1.0) {
+        vec3 fogColorIdkHowToGetItTho = vec3(1.0);
+        base_color.rgb = mix(fogColorIdkHowToGetItTho, base_color.rgb, chunk_fade);
+    }
 
 #if defined PROGRAM_GBUFFERS_TERRAIN && defined VANILLA_AO
 #if SHADER_AO != SHADER_AO_NONE
